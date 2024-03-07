@@ -1,6 +1,6 @@
 # Parkinging Assistant
 
-## Prject Description
+## Project Description
 
 This project was inspired by the small space in which we park a large van. The space between where the front of the car needs to sit to be able to close the garage, and where the car hits the wall of the garage is relatively small. This sensor was installed to give the driver a visual cue as to where exactly the front of the car is, and how far it is from the wall.
 
