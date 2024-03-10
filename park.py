@@ -54,6 +54,7 @@ def determine_led_color(num):
         GPIO.output(ORANGE_LED, GPIO.HIGH)
         print("ORANGE")
     else:
+        print(OFF)
         set_up_led_pins
 
 
