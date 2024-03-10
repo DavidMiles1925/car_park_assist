@@ -83,11 +83,11 @@ def run_sensor():
 
                 GPIO.output(TRIG, True)
 
-                time.sleep(0.00001)
+                time.sleep(0.0001)
 
                 GPIO.output(TRIG, False)
 
-                time.sleep(0.00001)
+                #time.sleep(0.00001)
 
                 while GPIO.input(ECHO)==0:
                     pulse_start = time.time()
