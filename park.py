@@ -97,6 +97,7 @@ def run_sensor():
                 print("echo 0")
                 while GPIO.input(ECHO)==0:
                     pulse_start = time.time()
+                    print(pulse_start)
 
                 print("echo 1")
                 while GPIO.input(ECHO)==1:
