@@ -78,22 +78,27 @@ def run_sensor():
         distance = 0
 
         while True:
+                print("loop tarted")
                 if distance > ORANGE_LED_MAX_DISTANCE:
                     time.sleep(PASSIVE_SLEEP_TIME)
                 else:
                     time.sleep(ACTIVE_SLEEP_TIME)
 
+                print("true")
                 GPIO.output(TRIG, True)
 
                 time.sleep(0.00001)
 
+                print("false")
                 GPIO.output(TRIG, False)
 
                 #time.sleep(0.00001)
 
+                print("echo 0")
                 while GPIO.input(ECHO)==0:
                     pulse_start = time.time()
 
+                print("echo 1")
                 while GPIO.input(ECHO)==1:
                     pulse_end = time.time()
 
