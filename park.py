@@ -30,6 +30,8 @@ def set_up_sensor_pins():
 
     GPIO.output(TRIG, False)
 
+    time.sleep(2)
+
 
 def set_up_led_pins():
 
@@ -83,7 +85,7 @@ def run_sensor():
 
                 GPIO.output(TRIG, True)
 
-                time.sleep(0.0001)
+                time.sleep(0.00001)
 
                 GPIO.output(TRIG, False)
 
