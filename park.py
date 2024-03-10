@@ -92,7 +92,7 @@ def run_sensor():
                 print("false")
                 GPIO.output(TRIG, False)
 
-                #time.sleep(0.00001)
+                time.sleep(0.00001)
 
                 print("echo 0")
                 while GPIO.input(ECHO)==0:
