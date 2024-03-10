@@ -72,37 +72,40 @@ def bounce(number):
 
 
 def run_sensor():
-    distance = 0
+    try:
+        distance = 0
 
-    while True:
-            if distance > ORANGE_LED_MAX_DISTANCE:
-                time.sleep(PASSIVE_SLEEP_TIME)
-            else:
-                time.sleep(ACTIVE_SLEEP_TIME)
+        while True:
+                if distance > ORANGE_LED_MAX_DISTANCE:
+                    time.sleep(PASSIVE_SLEEP_TIME)
+                else:
+                    time.sleep(ACTIVE_SLEEP_TIME)
 
-            GPIO.output(TRIG, True)
+                GPIO.output(TRIG, True)
 
-            time.sleep(0.000001)
+                time.sleep(0.000001)
 
-            GPIO.output(TRIG, False)
+                GPIO.output(TRIG, False)
 
-            time.sleep(0.000001)
+                time.sleep(0.000001)
 
-            while GPIO.input(ECHO)==0:
-                pulse_start = time.time()
+                while GPIO.input(ECHO)==0:
+                    pulse_start = time.time()
 
-            while GPIO.input(ECHO)==1:
-                pulse_end = time.time()
+                while GPIO.input(ECHO)==1:
+                    pulse_end = time.time()
 
-            pulse_duration = pulse_end - pulse_start
+                pulse_duration = pulse_end - pulse_start
 
-            distance = pulse_duration * PULSE_DURATION_MULTIPLIER
+                distance = pulse_duration * PULSE_DURATION_MULTIPLIER
 
-            distance = round(distance, 1)
+                distance = round(distance, 1)
 
-            os.system("clear")
-            print ('Distance:',distance,'cm')
-            determine_led_color(distance)
+                os.system("clear")
+                print ('Distance:',distance,'cm')
+                determine_led_color(distance)
+    except:
+        print("An error occurred in sensor function")
 
 
 if __name__ == "__main__":
