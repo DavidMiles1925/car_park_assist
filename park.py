@@ -30,6 +30,7 @@ def set_up_sensor_pins():
 
     GPIO.output(TRIG, False)
 
+
     time.sleep(2)
 
 
@@ -112,8 +113,9 @@ def run_sensor():
                 os.system("clear")
                 print ('Distance:',distance,'cm')
                 determine_led_color(distance)
-    except:
+    except Exception as e:
         print("An error occurred in sensor function")
+        print(e)
 
 
 if __name__ == "__main__":
