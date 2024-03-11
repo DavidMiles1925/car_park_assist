@@ -31,9 +31,6 @@ def set_up_sensor_pins():
     GPIO.output(TRIG, False)
 
 
-    time.sleep(2)
-
-
 def set_up_led_pins():
 
     for led in LED_ARRAY:
@@ -85,22 +82,16 @@ def run_sensor():
                 else:
                     time.sleep(ACTIVE_SLEEP_TIME)
 
-                print("true")
                 GPIO.output(TRIG, True)
-
-                time.sleep(0.00001)
-
-                print("false")
-                GPIO.output(TRIG, False)
 
                 time.sleep(0.000001)
 
-                print("echo 0")
+                GPIO.output(TRIG, False)
+
                 while GPIO.input(ECHO)==0:
                     pulse_start = time.time()
                     print(pulse_start)
 
-                print("echo 1")
                 while GPIO.input(ECHO)==1:
                     pulse_end = time.time()
 
