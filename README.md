@@ -17,6 +17,8 @@ This project was inspired by the small space in which we park a large van. The s
 
 The program is set to only check for a distance every 1 second (this can be adjusted in the `config.py` file) while the distance measured is greater than 300cm (also adjustable).
 
+---
+
 ## Building the Project
 
 ### Diagram
@@ -60,6 +62,8 @@ python park.py
 ```
 
 6. Follow these instructions to set the program to run at boot: [Run Program on Startup](https://github.com/DavidMiles1925/pi_zero_setup?tab=readme-ov-file#configure-a-program-to-run-on-startup)
+
+---
 
 ## Using the Device
 
@@ -111,5 +115,3 @@ As the car approaches the device, the lights will signal in the following order,
 &emsp;Red: TOO CLOSE. Back up.
 
 **If you do not see an orange light as you approach, assume the device is not working properly.**
-
-See below for more details on setting the distance tolerances.
