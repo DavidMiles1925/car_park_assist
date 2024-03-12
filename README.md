@@ -8,7 +8,7 @@ The program is set to only check for a distance every 1 second (this can be adju
 
 ## Diagram
 
-[Diagram Needed]
+![Diagram](./readme/diagram.png "Car Park Assist Diagram")
 
 ## Using the program
 
@@ -38,14 +38,19 @@ See below for more details on setting the distance tolerances.
 > **`ACTIVE_SLEEP_TIME`** - This controls the amount of time between distance checks while someone is actively parking.
 >
 > **`PASSIVE_SLEEP_TIME`** - This controls the amount of time between distance checks while no object is detected.
-
-TRIG,\
- ECHO,\
- PULSE_DURATION_MULTIPLIER,\
- ORANGE_LED,\
- YELLOW_LED,\
- GREEN_LED,\
- RED_LED,\
- LED_ARRAY,\
- ACTIVE_SLEEP_TIME,\
- PASSIVE_SLEEP_TIME,\
+>
+> **`TRIG`** - Sets the pin for the trigger on the ultrasonic sensor.
+>
+> **`ECHO`** - Sets the pin for the receiver on the ultrasonic sensor.
+>
+> **`PULSE_DURATION_MULTIPLIER`** - Sets the multiplier for calculating the distance from the sensor. (34330/2 = 17165)
+>
+> **`RED_LED`** - Sets the pin number for the orange LED indicator.
+>
+> **`GREEN_LED`** - Sets the pin number for the orange LED indicator.
+>
+> **`YELLOW_LED`** - Sets the pin number for the orange LED indicator.
+>
+> **`ORANGE_LED`** - Sets the pin number for the orange LED indicator.
+>
+> **`LED_ARRAY`** - An array of all LED values used to loop through values.
