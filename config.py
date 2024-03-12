@@ -6,16 +6,8 @@
 ##################################################
 ##################################################
 
-# Distances are in centimeters
 
-# Settings for my garage
-#RED_LED_MAX_DISTANCE = 20
-#GREEN_LED_MAX_DISTANCE = 28
-#YELLOW_LED_MAX_DISTANCE = 100
-#ORANGE_LED_MAX_DISTANCE = 200
-
-
-# Settings for Dad's garage
+# Default Settings
 RED_LED_MAX_DISTANCE = 60
 GREEN_LED_MAX_DISTANCE = 90
 YELLOW_LED_MAX_DISTANCE = 150
@@ -31,7 +23,6 @@ ORANGE_LED_MAX_DISTANCE = 300
 ##################################################
 
 # These variables represent the pins assigned to the distance sensor
-
 TRIG = 13
 ECHO = 23
 PULSE_DURATION_MULTIPLIER = 17165
