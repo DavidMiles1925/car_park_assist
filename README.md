@@ -7,8 +7,8 @@
 &emsp;[Diagram](#diagram)  
 &emsp;[Instructional Video](#instructional-video)  
 &emsp;[Installing the Code](#installing-the-code)  
-[**Using the Device**](#using-the-device)
-&emsp;[Adjusting the Distance Indicators](#adjusting-the-distance-indicators)
+[**Using the Device**](#using-the-device)  
+&emsp;[Adjusting the Distance Indicators](#adjusting-the-distance-indicators)  
 &emsp;[Setting Up](#setting-up)
 
 ## Project Description
@@ -105,9 +105,11 @@ sudo nano config.py
 Simply plug the device in to power it up. (MicroUSB port closest to the edge on the Pi Zero.)
 
 As the car approaches the device, the lights will signal in the following order, with their meanings listed beside them:  
-&emsp;Orange: The device sees you. **If you do not see an orange light as you approach, assume the device is not working properly.**  
+&emsp;Orange: The device sees you.  
 &emsp;Yellow: Getting close, not in parking zone yet.  
 &emsp;Green: Within parking tolerance.  
 &emsp;Red: TOO CLOSE. Back up.
+
+**If you do not see an orange light as you approach, assume the device is not working properly.**
 
 See below for more details on setting the distance tolerances.
