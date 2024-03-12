@@ -1,14 +1,58 @@
 # Parkinging Assistant
 
+## Table of Contents
+
+Coming Soon
+
 ## Project Description
 
 This project was inspired by the small space in which we park a large van. The space between where the front of the car needs to sit to be able to close the garage, and where the car hits the wall of the garage is relatively small. This sensor was installed to give the driver a visual cue as to where exactly the front of the car is, and how far it is from the wall.
 
 The program is set to only check for a distance every 1 second (this can be adjusted in the `config.py` file) while the distance measured is greater than 300cm (also adjustable).
 
-## Diagram
+## Building the Project
+
+### Diagram
 
 ![Diagram](./readme/diagram.png "Car Park Assist Diagram")
+
+### Instructional Video
+
+**Watch this video to help you build the device!**
+
+[Link Here]()
+
+### Installing the Code
+
+1. If you haven't already, follow [these instructions](https://github.com/DavidMiles1925/pi_zero_setup?tab=readme-ov-file#setup-procedure) to set up your Raspberry Pi.
+
+2. Boot your Pi, and install git:
+
+```bash
+sudo apt install git
+git config --global user.email "you@example.com"
+git config --global user.name "Your Name"
+```
+
+3. Install the code:
+
+```bash
+git clone https://github.com/DavidMiles1925/car_park_assist
+```
+
+4. Navigate to the `car_park_assist` directory.
+
+```bash
+cd car_park_assist
+```
+
+5. Run the program and verify it is working.
+
+```bash
+python park.py
+```
+
+6. Follow these instructions to set the program to run at boot: [Run Program on Startup](https://github.com/DavidMiles1925/pi_zero_setup?tab=readme-ov-file#configure-a-program-to-run-on-startup)
 
 ## Using the program
 
@@ -25,6 +69,12 @@ As the car approaches the device, the lights will signal in the following order,
 See below for more details on setting the distance tolerances.
 
 ### Adjusting The Distance Indicators
+
+1. Open the config.py file
+
+```bash
+sudo nano config.py
+```
 
 **These are the most commonly used values in the configuration file.** These varialbes control the maximum distance (in centimeters) at which that LED will indicate. The order of indication should match the order below. (Red should always be lowest, orange should always be highest.):
 
