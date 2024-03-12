@@ -2,7 +2,14 @@
 
 ## Table of Contents
 
-Coming Soon
+[**Project Description**](#project-description)  
+[**Building the Project**](#building-the-project)  
+&emsp;[Diagram](#diagram)  
+&emsp;[Instructional Video](#instructional-video)  
+&emsp;[Installing the Code](#installing-the-code)  
+[**Using the Device**](#using-the-device)
+&emsp;[Adjusting the Distance Indicators](#adjusting-the-distance-indicators)
+&emsp;[Setting Up](#setting-up)
 
 ## Project Description
 
@@ -54,19 +61,7 @@ python park.py
 
 6. Follow these instructions to set the program to run at boot: [Run Program on Startup](https://github.com/DavidMiles1925/pi_zero_setup?tab=readme-ov-file#configure-a-program-to-run-on-startup)
 
-## Using the program
-
-### Setting Up the Device
-
-Simply plug the device in to power it up. (MicroUSB port closest to the edge on the Pi Zero.)
-
-As the car approaches the device, the lights will signal in the following order, with their meanings listed beside them:  
-&emsp;Orange: The device sees you. **If you do not see an orange light as you approach, assume the device is not working properly.**
-&emsp;Yellow: Getting close, not in parking zone yet.
-&emsp;Green: Within parking tolerance.
-&emsp;Red: TOO CLOSE. Back up.
-
-See below for more details on setting the distance tolerances.
+## Using the Device
 
 ### Adjusting The Distance Indicators
 
@@ -104,3 +99,15 @@ sudo nano config.py
 > **`ORANGE_LED`** - Sets the pin number for the orange LED indicator.
 >
 > **`LED_ARRAY`** - An array of all LED values used to loop through values.
+
+### Setting Up
+
+Simply plug the device in to power it up. (MicroUSB port closest to the edge on the Pi Zero.)
+
+As the car approaches the device, the lights will signal in the following order, with their meanings listed beside them:  
+&emsp;Orange: The device sees you. **If you do not see an orange light as you approach, assume the device is not working properly.**  
+&emsp;Yellow: Getting close, not in parking zone yet.  
+&emsp;Green: Within parking tolerance.  
+&emsp;Red: TOO CLOSE. Back up.
+
+See below for more details on setting the distance tolerances.
