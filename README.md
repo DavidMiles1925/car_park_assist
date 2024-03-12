@@ -25,13 +25,13 @@ See below for more details on setting the distance tolerances.
 
 ## config.py
 
-**`ACTIVE_SLEEP_TIME`**
+**`ACTIVE_SLEEP_TIME`** - This controls the amount of time between distance checks while someone is actively parking.
 
-This controls the amount of time between distance checks while someone is actively parking.
 
-**`PASSIVE_SLEEP_TIME`**
+**`PASSIVE_SLEEP_TIME`** - This controls the amount of time between distance checks while no object is detected.
 
 These varialbes control the maximum distance (in centimeters) at which that LED will indicate. The order of indication should match the order below. (Red should always be lowest, orange should always be highest.):  
+
 **`RED_LED_MAX_DISTANCE`**  
 **`GREEN_LED_MAX_DISTANCE`**  
 **`YELLOW_LED_MAX_DISTANCE`**  
