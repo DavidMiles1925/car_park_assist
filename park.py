@@ -5,6 +5,7 @@ import os
 # These values are all imported from config.py.
 # See that file for descriptions.
 from config import \
+    TIGGER_SETTLE_TIME,\
     TRIG,\
     ECHO,\
     PULSE_DURATION_MULTIPLIER,\
@@ -90,11 +91,11 @@ def run_sensor():
 
                 GPIO.output(TRIG, True)
 
-                time.sleep(0.000001)
+                time.sleep(TIGGER_SETTLE_TIME)
 
                 GPIO.output(TRIG, False)
 
-                time.sleep(0.000001)
+                time.sleep(TIGGER_SETTLE_TIME)
 
                 while GPIO.input(ECHO)==0:
                     pulse_start = time.time()
