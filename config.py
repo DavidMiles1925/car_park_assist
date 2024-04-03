@@ -23,7 +23,7 @@ ORANGE_LED_MAX_DISTANCE = 300
 ##################################################
 
 # This is the time (in seconds) given to the trigger to "settle" after switching on or off
-TIGGER_SETTLE_TIME = 0.000001
+TRIGGER_SETTLE_TIME = 0.000001
 
 # These variables represent the pins assigned to the distance sensor
 TRIG = 13

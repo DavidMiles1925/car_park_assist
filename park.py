@@ -5,7 +5,7 @@ import os
 # These values are all imported from config.py.
 # See that file for descriptions.
 from config import \
-    TIGGER_SETTLE_TIME,\
+    TRIGGER_SETTLE_TIME,\
     TRIG,\
     ECHO,\
     PULSE_DURATION_MULTIPLIER,\
@@ -82,26 +82,31 @@ def display_distance(distance):
 def run_sensor():
     try:
         distance = 0
+        pulse_start = 0
+        pulse_end = 0
 
         while True:
                 if distance > ORANGE_LED_MAX_DISTANCE:
                     time.sleep(PASSIVE_SLEEP_TIME)
                 else:
+                    
                     time.sleep(ACTIVE_SLEEP_TIME)
 
                 GPIO.output(TRIG, True)
 
-                time.sleep(TIGGER_SETTLE_TIME)
-
+                time.sleep(TRIGGER_SETTLE_TIME)
+                
                 GPIO.output(TRIG, False)
 
-                time.sleep(TIGGER_SETTLE_TIME)
+                #time.sleep(TRIGGER_SETTLE_TIME)
 
                 while GPIO.input(ECHO)==0:
                     pulse_start = time.time()
+                    #print(pulse_start)
 
                 while GPIO.input(ECHO)==1:
                     pulse_end = time.time()
+                    #print(pulse_end)
 
                 distance = calculate_distance(pulse_start, pulse_end)
 
