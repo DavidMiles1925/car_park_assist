@@ -13,7 +13,7 @@
 
 ## Project Description
 
-![Final Product](./readme/car_park_table.png "Final Product")
+![Final Product](./readme/final_product.jpg "Final Product")
 
 This project was inspired by the small space in which we park a large van. The space between where the front of the car needs to sit to be able to close the garage, and where the car hits the wall of the garage is relatively small. This sensor was installed to give the driver a visual cue as to where exactly the front of the car is, and how far it is from the wall.
 
@@ -25,7 +25,7 @@ The program is set to only check for a distance every 1 second (this can be adju
 
 ### Diagram
 
-![Diagram](./readme/car_park_diagram.png "Car Park Assist Diagram")
+![Diagram](./readme/car_park_diagram_new.png "Car Park Assist Diagram")
 ![Table](./readme/car_park_table.png "Car Park Assist Table")
 
 ### Instructional Video
