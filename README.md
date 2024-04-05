@@ -4,6 +4,7 @@
 
 [**Project Description**](#project-description)  
 [**Building the Project**](#building-the-project)  
+&emsp;[Parts List](#parts-list)  
 &emsp;[Diagram](#diagram)  
 &emsp;[Instructional Video](#instructional-video)  
 &emsp;[Installing the Code](#installing-the-code)  
@@ -22,6 +23,23 @@ The program is set to only check for a distance every 1 second (this can be adju
 ---
 
 ## Building the Project
+
+### Parts List
+
+| Part                                        |   Quantity    |
+| :------------------------------------------ | :-----------: |
+| Raspberry Pi Zero 2 W (any Pi will work)    |       1       |
+| HC-SR04 Ultrasonic Sensor                   |       1       |
+| Solderless Breadboard                       |       1       |
+| 220 Ohm Resistor                            |       4       |
+| 330 Ohm Restistor (Or 220, 100, and 10 Ohm) | 1 (or 1 each) |
+| Orange LED                                  |       1       |
+| Yellow LED                                  |       1       |
+| Green LED                                   |       1       |
+| Red LED                                     |       1       |
+| 10 cm Colored Jumper Wires                  |       9       |
+| Pack of Breadboard Jumpers Wires            |    1 pack     |
+| 3d Printer (Optional, for printing case)    |       1       |
 
 ### Diagram
 
